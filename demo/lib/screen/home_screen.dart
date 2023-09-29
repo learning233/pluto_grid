@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:demo/test1.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -212,6 +213,14 @@ class PlutoFeatures extends StatelessWidget {
         spacing: 10,
         runSpacing: 10,
         children: [
+          PlutoListTile(
+            title: 'Demo',
+            description:
+            '测试页',
+            onTapLiveDemo: () {
+              Navigator.pushNamed(context, DemoPage.routeName);
+            },
+          ),
           PlutoListTile(
             title: 'Column moving',
             description:

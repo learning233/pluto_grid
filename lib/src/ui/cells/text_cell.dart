@@ -168,7 +168,7 @@ mixin TextCellState<T extends TextCell> on State<T> implements TextFieldProps {
 
     PlatformHelper.onMobile(() {
       widget.stateManager.setKeepFocus(false);
-      FocusScope.of(context).unfocus();
+      FocusNode().unfocus();
     });
   }
 

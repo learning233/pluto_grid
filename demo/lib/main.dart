@@ -1,3 +1,4 @@
+import 'package:demo/test1.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -53,10 +54,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute:
-          kReleaseMode ? HomeScreen.routeName : DevelopmentScreen.routeName,
+      initialRoute: DemoPage.routeName,
       routes: {
         HomeScreen.routeName: (context) => const HomeScreen(),
+        DemoPage.routeName: (context) => const DemoPage(),
         AddAndRemoveColumnRowScreen.routeName: (context) =>
             const AddAndRemoveColumnRowScreen(),
         AddRowsAsynchronouslyScreen.routeName: (context) =>
