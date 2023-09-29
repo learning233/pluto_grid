@@ -159,6 +159,7 @@ mixin TextCellState<T extends TextCell> on State<T> implements TextFieldProps {
             : _CellEditingStatus.updated;
   }
 
+
   void _handleOnComplete() {
     final old = _textController.text;
 
